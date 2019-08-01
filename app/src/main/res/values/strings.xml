@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="business_name">Loaves and Fishes</string>
+    <string name="description_text">Our mission is to provide meals to the homeless in the Indianapolis metro area. We serve a hot meal 7 days a week, 365 days a year. Please contact us to discover how you can help the deserving in your community.</string>
+    <string name="address_street">2836 N. South St.</string>
+    <string name="address_city_state">Indianapolis, IN</string>
+    <string name="address_zip">46204-3847</string>
+    <string name="contact_phone">1.317.555.5555</string>
+    <string name="contact_email">sbryan@loavesnfish.org</string>
+    <string name="contact_title">Contact Us!</string>
+</resources>

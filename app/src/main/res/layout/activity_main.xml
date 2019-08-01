@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sigilius.android.project1.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/homeless" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:background="#607D8B"
+        android:text="@string/business_name" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:lineSpacingMultiplier="1.1"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:background="#E1F5FE"
+        android:text="@string/description_text" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#607D8B">
+
+        <TextView
+            android:id="@+id/contact_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="#000000"
+            android:text="@string/contact_title" />
+
+        <TextView
+            android:id="@+id/street_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_info"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="sans-serif"
+            android:paddingTop="2dp"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="@string/address_street" />
+
+        <TextView
+            android:id="@+id/city_state_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="sans-serif"
+            android:layout_below="@id/street_addr"
+            android:paddingTop="2dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="1dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="@string/address_city_state" />
+
+        <TextView
+            android:id="@+id/zip_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="sans-serif"
+            android:layout_below="@id/city_state_addr"
+            android:paddingTop="1dp"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="@string/address_zip" />
+
+        <TextView
+            android:id="@+id/contact_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_info"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="1dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="@string/contact_phone"/>
+
+        <TextView
+            android:id="@+id/contact_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_phone"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif"
+            android:paddingTop="1dp"
+            android:paddingRight="10dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="@string/contact_email"/>
+
+
+        <!-- Social media buttons (follow us) -->
+
+        <ImageButton
+            android:id="@+id/gplus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/googleplus" />
+
+        <ImageButton
+            android:id="@+id/twittr"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/gplus"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/twitter" />
+
+        <ImageButton
+            android:id="@+id/facebk"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/twittr"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/facebook" />
+
+        <ImageButton
+            android:id="@+id/instgm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/gplus"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/instagram" />
+
+        <ImageButton
+            android:id="@+id/utube"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/instgm"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/youtube" />
+    </RelativeLayout>
+</LinearLayout>
